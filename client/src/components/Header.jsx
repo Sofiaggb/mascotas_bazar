@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { logo, userDefault } from "../assets/index";
 import { FiShoppingCart } from "react-icons/fi";
 import { useSelector } from "react-redux"
@@ -17,7 +17,7 @@ const Header = () => {
         </Link>
         <div className="flex items-center gap-8">
           <ul className="flex items-center gap-8">
-            <li className="headerLink">Home </li>
+            <NavLink to={"/"} className="headerLink">Home </NavLink>
             <li className="headerLink">Pages</li>
             <li className="headerLink">Shop</li>
             <li className="headerLink">Element</li>
